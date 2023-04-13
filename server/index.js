@@ -22,7 +22,7 @@ app.use('/api/v1/properties', propertyRouter);
 
 const startServer = async () => {
     try {
-        //connect to database ...
+        //connect to MongoDB database ...
         connectDB(process.env.MONGODB_URL);
 
         app.listen(8080, ()=> console.log('Server started on Port http://localhost:8080'));
