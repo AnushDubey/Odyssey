@@ -7,9 +7,6 @@ import { Login } from './login';
 import MyProfile from './my_profile';
 import PropertyDetails from './property_details';
 import EditProperty from './edit_property';
-import MyProfile from './my_profile';
-import PropertyDetails from './property_details';
-import EditProperty from './edit_property';
 
 export {
     AgentProfile,

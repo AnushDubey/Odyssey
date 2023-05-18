@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 // using routes by middlewares
 
 app.use('/api/v1/users', userRouter);
-app.use('/api/v1/properties', propertyRouter);
+app.use('/api/v1/items', propertyRouter);
 
 
 

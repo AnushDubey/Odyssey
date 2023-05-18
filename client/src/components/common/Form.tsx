@@ -25,21 +25,27 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
 
                     <FormControl>
                         <FormHelperText sx={{
-                            fontWeight: 500, margin: "10px", fontSize: 16, color: "#a8b2d1"
-                        }}>Enter Property Name
+                            fontWeight: 500, margin: "10px", fontSize: 18, color: "#ffffff"
+                        }}>Enter Item Name
                         </FormHelperText>
                         <TextField
                             fullWidth
                             required
                             id="outlined-basic"
-                            color="info"
+                            
                             style={{
-                                borderColor: '#64ffda'
+                                borderColor: "#FFFFFF",
+                                color: "#FFFFFF"
                             }}
                             variant="outlined"
                             {...register("title", {
                                 required: true
                             })}
+                            InputProps={{
+                                style: {
+                                color: "#FFFFFF"
+                            }
+                        }}
                         >
 
                         </TextField>
@@ -48,7 +54,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
 
                     <FormControl>
                         <FormHelperText sx={{
-                            fontWeight: 500, margin: "10px", fontSize: 16, color: "#a8b2d1"
+                            fontWeight: 500, margin: "10px", fontSize: 18, color: "#ffffff"
                         }}>Enter Description
                         </FormHelperText>
                         <TextareaAutosize
@@ -63,11 +69,16 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
                                 borderColor: '#8892b0',
                                 borderRadius: 6,
                                 padding: 10,
-                                color: "#919191"
+                                color: "#FFFFFF"
                             }}
                             {...register("descrption", {
                                 required: true
                             })}
+                            InputProps={{
+                                style: {
+                                color: "#FFFFFF"
+                            }
+                        }}
                         />
 
                     </FormControl>
@@ -78,33 +89,33 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
                                 fontWeight: 500,
                                 margin: "10px 0",
                                 fontSize: 16,
-                                color: "#a8b2d1"
+                                color: "#ffffff"
                             }}>
 
-                                Select Property Type
+                                Select Item Type
                             </FormHelperText>
 
                             <Select
                                 variant="outlined"
-                                color="info"
+                                style={{color:"#FFFFFF"}}
                                 displayEmpty
                                 required
                                 inputProps={{
                                     'aria-label': 'Without label'
                                 }}
 
-                                defaultValue="apartment"
+                                defaultValue="electronics"
                                 {...register('propertyType',
                                     { required: true })}
                             >
-                                <MenuItem value="apartment">Apartment</MenuItem>
-                                <MenuItem value="villa">Villa</MenuItem>
-                                <MenuItem value="farmhouse">Farmhouse</MenuItem>
-                                <MenuItem value="condos">Condos</MenuItem>
-                                <MenuItem value="townhouse">TownHouse</MenuItem>
-                                <MenuItem value="duplex">Duplex</MenuItem>
-                                <MenuItem value="studio">Studio</MenuItem>
-                                <MenuItem value="chalet">Chalet</MenuItem>
+                                <MenuItem value="electronics">Electronics</MenuItem>
+                                <MenuItem value="clothes">Clothes</MenuItem>
+                                <MenuItem value="sports">Sports</MenuItem>
+                                <MenuItem value="toys">Toys</MenuItem>
+                                <MenuItem value="domestic">Domestic</MenuItem>
+                                <MenuItem value="automobiles">Automobiles</MenuItem>
+                                <MenuItem value="other">Other</MenuItem>
+                                
 
                             </Select>
 
@@ -112,19 +123,24 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
 
                         <FormControl>
                             <FormHelperText sx={{
-                                fontWeight: 500, margin: "10px", fontSize: 16, color: "#a8b2d1"
-                            }}>Enter Property Price
+                                fontWeight: 500, margin: "10px", fontSize: 18, color: "#ffffff"
+                            }}>Enter Item Price
                             </FormHelperText>
                             <TextField
                                 fullWidth
                                 required
                                 id="outlined-basic"
-                                color="info"
+                                
                                 type="number"
-                                variant="outlined"
+                                
                                 {...register("price", {
                                     required: true
                                 })}
+                                InputProps={{
+                                style: {
+                                color: "#FFFFFF"
+                            }
+                        }}
                             >
 
                             </TextField>
@@ -135,7 +151,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
 
                     <FormControl>
                         <FormHelperText sx={{
-                            fontWeight: 500, margin: "10px", fontSize: 16, color: "#a8b2d1"
+                            fontWeight: 500, margin: "10px", fontSize: 18, color: "#ffffff"
                         }}>Enter Location
                         </FormHelperText>
                         <TextField
@@ -147,6 +163,11 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
                             {...register("location", {
                                 required: true
                             })}
+                            InputProps={{
+                                style: {
+                                color: "#FFFFFF"
+                            }
+                        }}
                         >
 
                         </TextField>
@@ -159,7 +180,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
                     >
 
                         <Stack direction="row" gap={2}>
-                            <Typography color="#a8b2d1"
+                            <Typography color="#ffffff"
                                 fontSize={16}
                                 fontWeight={500}
                                 my={"10px"}
@@ -170,7 +191,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
                             <Button component="label" sx={{
                                 width: 'fit-content', color: "#2ed480",
                                 textTransform: "capitalize",
-                                fontSize: "16px"
+                                fontSize: "18px"
                             }}>
 
                                 Upload*

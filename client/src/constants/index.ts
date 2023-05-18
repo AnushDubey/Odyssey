@@ -1,27 +1,27 @@
 export const propertyReferralsInfo = [
     {
-        title: 'Social Media',
-        percentage: 64,
+        title: 'Electronics',
+        percentage: 68,
         color: '#6C5DD3',
     },
     {
-        title: 'Marketplace',
+        title: 'Clothes',
         percentage: 40,
         color: '#7FBA7A',
     },
     {
-        title: 'Websites',
+        title: 'Sports',
         percentage: 50,
         color: '#FFCE73',
     },
     {
-        title: 'Digital Ads',
-        percentage: 80,
-        color: '#FFA2C0',
+        title: 'Domestic',
+        percentage: 15,
+        color: '#F45252',
     },
     {
         title: 'Others',
-        percentage: 15,
-        color: '#F45252',
+        percentage: 54,
+        color: '#7FBA7A',
     },
 ];

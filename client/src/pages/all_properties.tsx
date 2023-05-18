@@ -39,8 +39,8 @@ const AllProperties = () => {
         }
     }, [filters])
 
-    if (isLoading) return <Typography>Loading...</Typography>
-    if (isError) return <Typography>Error...</Typography>
+    // if (isLoading) return <Typography>Loading...</Typography>
+    // if (isError) return <Typography>Error...</Typography>
 
 
     return (
@@ -52,7 +52,7 @@ const AllProperties = () => {
                         fontWeight={700}
                         color="#ccd6f6">
 
-                        {!allProperties.length ? 'There are no properties' : 'All Properties'}
+                        {!allProperties.length ? 'There are no items' : 'All Items'}
                     </Typography>
 
                     <Box mb={2} mt={3} display="flex" width="84%" justifyContent="space-between" flexWrap="wrap">
@@ -68,8 +68,10 @@ const AllProperties = () => {
 
                             <TextField
                                 variant="outlined"
-                                color="info"
-                                placeholder="Search By Title"
+                                InputProps={{
+                                    style: { color: '#ffffff' },
+                                    placeholder: 'Search By Title',
+                                    }}
                                 value={currentFilterValues.title}
                                 onChange={(e) => {
                                     setFilters([
@@ -83,7 +85,7 @@ const AllProperties = () => {
                             />
                             <Select
                                 variant="outlined"
-                                color="info"
+                                style={{color:"#f0ffff"}}
                                 displayEmpty
                                 required
                                 inputProps={{ 'aria-label': 'Without label' }}
@@ -103,7 +105,7 @@ const AllProperties = () => {
                                 <MenuItem value="">
                                     All
                                 </MenuItem>
-                                {['Apartment', 'Villa', 'Farmhouse', 'Condos', 'TownHouse', 'Duplex', 'Studio', 'Chalet'].map((type) => (
+                                {['Electronics', 'Clothes', 'Domestic', 'Cars', 'Toys', 'Sports'].map((type) => (
                                     <MenuItem key={type} value={type.toLowerCase()}>{type}</MenuItem>
                                 ))}
 
@@ -122,13 +124,13 @@ const AllProperties = () => {
                     fontWeight={700}
                     color="#ccd6f6">
 
-                    List Property
+                    Available Items
                 </Typography>
 
 
                 <CustomButton
-                    title="Add Property"
-                    handleClick={() => { navigate('/properties/create') }}
+                    title="Add Item"
+                    handleClick={() => { navigate('/items/create') }}
                     backgroundColor="#475be8"
                     color="#fcfcfc"
                     icon={<Add />} />
