@@ -20,39 +20,39 @@ const Home = () => {
 
   const latestProperties = data?.data ?? [];
 
-  if (isLoading) return <Typography>Loading...</Typography>;
-  if (isError) return <Typography>Something went wrong!</Typography>;
+  // if (isLoading) return <Typography>Loading...</Typography>;
+  // if (isError) return <Typography>Something went wrong!</Typography>;
 
   return (
     <Box>
       <Typography fontSize={25} fontWeight={700} color="#a8b2d1">
-        Dashboard
+        About The Company
       </Typography>
 
-      <Box mt="20px" display="flex" flexWrap="wrap" gap={4}>
+      <Box mt="10px" display="flex" flexWrap="wrap" gap={4}>
         <PieChart
-          title="Drones for Sale"
-          value={9}
+          title="Items for Sale"
+          value={124}
           series={[60, 40]}
-          colors={['#475BE8', '#CFC8FF']}
+          colors={['#31cc74', '#CFC8FF']}
         />
         <PieChart
-          title="Drones for Rent"
-          value={10}
+          title="Items for Rent"
+          value={93}
           series={[80, 20]}
-          colors={['#475BE8', '#CFC8FF']}
+          colors={['#31cc74', '#CFC8FF']}
         />
         <PieChart
-          title="Total customers"
-          value={47}
+          title="Total Customers"
+          value={1500}
           series={[75, 25]}
-          colors={['#475BE8', '#CFC8FF']}
+          colors={['#31cc74', '#CFC8FF']}
         />
         <PieChart
           title="Available in Cities"
-          value={7}
+          value={14}
           series={[20, 80]}
-          colors={['#475BE8', '#CFC8FF']}
+          colors={['#31cc74', '#CFC8FF']}
         />
       </Box>
 
@@ -77,7 +77,7 @@ const Home = () => {
         mt="25px"
       >
         <Typography fontSize="18px" fontWeight={600} color="#8892b0" >
-          Latest Properties
+          Latest Items
         </Typography>
 
         <Box

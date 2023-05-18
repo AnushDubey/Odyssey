@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json({ limit: '50mb' }));
 
 app.get('/', (req, res) => {
-    res.send({ message: "Hello World!" })
+    res.send({ message: "Server has started!" })
 })
 
 // using routes by middlewares
