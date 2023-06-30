@@ -1,5 +1,5 @@
 # Odyssey
-This is a MERN stack web application with CRUD application using refine framework. This is a website for renting and purchasing various items. Our website offers a variety of products, including household, electronics, books, clothes as well as vehicles.
+This is an **ongoing** MERN stack web application with CRUD application using refine framework. This is a website for renting and purchasing various items. Our website offers a variety of products, including household, electronics, books, clothes as well as vehicles.
 
 The name "Odyssey" works well for an online marketplace website as it conveys a sense of adventure, exploration, and journey - all of which could relate to the experience of discovering new products, finding deals, and connecting with other buyers and sellers.
 
